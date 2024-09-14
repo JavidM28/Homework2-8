@@ -1,4 +1,7 @@
 package com.javid.projectv2;
 
-public class EmployeeNotFoundException {
+public class EmployeeNotFoundException extends RuntimeException {
+    public EmployeeNotFoundException(String message) {
+        super(message);
+    }
 }
